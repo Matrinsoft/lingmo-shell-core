@@ -1,0 +1,30 @@
+Source: lingmo-shell-core
+Section: x11
+Priority: optional
+Maintainer: Lingmo OS Team <team@lingmo.org>
+Build-Depends: debhelper-compat (= 13), cmake (>= 3.21), qt6-base-dev (>= 6.5),
+               liblingmoipc-dev, liblingmoutils-dev, liblingmoconfig-dev,
+               liblingmoplugin-dev, liblingmotheme-dev
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
+
+Package: lingmo-shell-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, systemd
+Description: Lingmo Desktop - Shell runtime core
+ Shell runtime core that manages surfaces, plugins, and session integration
+ for the Lingmo Desktop environment.
+
+Package: liblingmoshellcore1
+Architecture: any
+Section: libs
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Lingmo Desktop - Shell core library (runtime)
+ Shared library for the Lingmo Desktop shell core.
+
+Package: liblingmoshellcore-dev
+Architecture: any
+Section: libdevel
+Depends: liblingmoshellcore1 (= ${binary:Version}), ${misc:Depends}
+Description: Lingmo Desktop - Shell core library (development files)
+ Development files for the Lingmo Desktop shell core library.

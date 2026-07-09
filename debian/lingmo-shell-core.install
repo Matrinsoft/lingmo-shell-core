@@ -1,0 +1,3 @@
+usr/libexec/lingmo-shell-core
+usr/lib/*/systemd/user/lingmo-shell-core.service
+usr/lib/*/systemd/user/lingmo-shell-core.target

@@ -1,0 +1,7 @@
+[Unit]
+Description=Lingmo Desktop Shell Core Target
+Requires=lingmo-shell-core.service
+After=lingmo-shell-core.service
+
+[Install]
+WantedBy=graphical-session.target

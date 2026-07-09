@@ -1,0 +1,3 @@
+usr/include/LingmoShellCore/
+usr/lib/*/libLingmoShellCore.so
+usr/lib/*/cmake/LingmoShellCore/
