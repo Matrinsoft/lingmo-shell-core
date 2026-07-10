@@ -19,12 +19,33 @@ for the Lingmo Desktop environment.
 %cmake_build
 %install
 %cmake_install
+%package -n liblingmoshellcore%{majver}
+Summary:        Runtime libraries for lingmo-shell-core
+
+%description -n liblingmoshellcore%{majver}
+Runtime libraries for lingmo-shell-core.
+
+%package -n liblingmoshellcore-devel
+Summary:        Development files for lingmo-shell-core
+Requires:       liblingmoshellcore%{majver}%{?isa} = %{version}-%{release}
+
+%description -n liblingmoshellcore-devel
+Headers and CMake integration for building applications that use lingmo-shell-core.
+
+%files -n liblingmoshellcore%{majver}
+%license LICENSE
+%{_libdir}/libLingmoShellCore.so.%{majver}*
+
+%files -n liblingmoshellcore-devel
+%{_includedir}/LingmoShellCore/
+%{_libdir}/cmake/LingmoShellCore/
+%{_libdir}/libLingmoShellCore.so
+
 %files
 %license LICENSE
 %{_libexecdir}/lingmo-shell-core
-%{_libdir}/libLingmoShellCore.so.%{majver}*
 %{_prefix}/lib/systemd/user/lingmo-shell-core.service
 %{_prefix}/lib/systemd/user/lingmo-shell-core.target
 %changelog
-* Wed Jul 09 2026 Lingmo OS Team <team@lingmo.org> - 1.0.0-1
+* Thu Jul 09 2026 Lingmo OS Team <team@lingmo.org> - 1.0.0-1
 - Initial release
