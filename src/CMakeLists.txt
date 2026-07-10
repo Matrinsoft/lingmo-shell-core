@@ -44,6 +44,7 @@ target_include_directories(LingmoShellCore
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
     PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/LingmoShellCore
 )
 
 target_link_libraries(LingmoShellCore
