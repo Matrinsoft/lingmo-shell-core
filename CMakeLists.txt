@@ -25,7 +25,7 @@ option(LINGMO_ENABLE_SANITIZERS "Enable sanitizers" OFF)
 option(LINGMO_ENABLE_UNITY_BUILD "Enable unity builds" OFF)
 
 # ── Dependencies ──────────────────────────────────────────
-find_package(Qt6 REQUIRED COMPONENTS Core DBus)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui DBus)
 find_package(Qt6 COMPONENTS Test QUIET)
 
 find_package(LingmoIPC REQUIRED)
