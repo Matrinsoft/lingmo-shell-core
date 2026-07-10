@@ -17,8 +17,6 @@ ShellRuntime::ShellRuntime(QObject *parent)
 {
     d->q = this;
 }
-{
-}
 
 ShellRuntime::~ShellRuntime() = default;
 
