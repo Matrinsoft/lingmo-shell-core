@@ -3,6 +3,9 @@ set(PUBLIC_HEADERS
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/SurfaceManager.h
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/PluginManager.h
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/AppletManager.h
+    ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ShellDBusService.h
+    ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ShellConfig.h
+    ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ThemeWatcher.h
 )
 
 set(PRIVATE_HEADERS
@@ -10,6 +13,9 @@ set(PRIVATE_HEADERS
     LingmoShellCore/private/SurfaceManager_p.h
     LingmoShellCore/private/PluginManager_p.h
     LingmoShellCore/private/AppletManager_p.h
+    LingmoShellCore/private/ShellDBusService_p.h
+    LingmoShellCore/private/ShellConfig_p.h
+    LingmoShellCore/private/ThemeWatcher_p.h
 )
 
 set(SOURCES
@@ -17,6 +23,9 @@ set(SOURCES
     LingmoShellCore/Surface/SurfaceManager.cpp
     LingmoShellCore/Plugin/PluginManager.cpp
     LingmoShellCore/Applet/AppletManager.cpp
+    LingmoShellCore/DBus/ShellDBusService.cpp
+    LingmoShellCore/Config/ShellConfig.cpp
+    LingmoShellCore/Config/ThemeWatcher.cpp
 )
 
 set(CMAKE_AUTOMOC ON)
