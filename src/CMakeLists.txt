@@ -54,7 +54,7 @@ target_link_libraries(LingmoShellCore
         Lingmo::LingmoIPC
         Lingmo::LingmoConfig
         Lingmo::LingmoPlugin
-        Lingmo::LingmoTheme
+        ${LINGMO_THEME_TARGET}
         Lingmo::LingmoUtils
 )
 
