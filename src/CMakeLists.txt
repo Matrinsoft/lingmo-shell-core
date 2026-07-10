@@ -6,6 +6,7 @@ set(PUBLIC_HEADERS
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ShellDBusService.h
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ShellConfig.h
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ThemeWatcher.h
+    ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ShellSession.h
 )
 
 set(PRIVATE_HEADERS
@@ -16,6 +17,7 @@ set(PRIVATE_HEADERS
     LingmoShellCore/private/ShellDBusService_p.h
     LingmoShellCore/private/ShellConfig_p.h
     LingmoShellCore/private/ThemeWatcher_p.h
+    LingmoShellCore/private/ShellSession_p.h
 )
 
 set(SOURCES
@@ -26,6 +28,7 @@ set(SOURCES
     LingmoShellCore/DBus/ShellDBusService.cpp
     LingmoShellCore/Config/ShellConfig.cpp
     LingmoShellCore/Config/ThemeWatcher.cpp
+    LingmoShellCore/Session/ShellSession.cpp
 )
 
 set(CMAKE_AUTOMOC ON)
