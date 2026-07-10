@@ -2,6 +2,7 @@
 #include "private/ShellDBusService_p.h"
 
 #include <QDBusConnection>
+#include <QDBusError>
 #include <QDebug>
 
 namespace Lingmo {

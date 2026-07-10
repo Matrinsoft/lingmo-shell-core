@@ -15,6 +15,9 @@ ShellRuntime::ShellRuntime(QObject *parent)
     : QObject(parent)
     , d(std::make_unique<ShellRuntimePrivate>())
 {
+    d->q = this;
+}
+{
 }
 
 ShellRuntime::~ShellRuntime() = default;
