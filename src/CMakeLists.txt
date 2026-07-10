@@ -51,11 +51,11 @@ target_link_libraries(LingmoShellCore
         Qt6::Core
         Qt6::DBus
     PRIVATE
-        Lingmo::IPC
-        Lingmo::Config
-        Lingmo::Plugin
-        Lingmo::Theme
-        Lingmo::Utils
+        Lingmo::LingmoIPC
+        Lingmo::LingmoConfig
+        Lingmo::LingmoPlugin
+        Lingmo::LingmoTheme
+        Lingmo::LingmoUtils
 )
 
 target_compile_definitions(LingmoShellCore PRIVATE LINGMOSHELLCORE_LIBRARY)
