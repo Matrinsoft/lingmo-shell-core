@@ -23,8 +23,8 @@ for the Lingmo Desktop environment.
 %license LICENSE
 %{_libexecdir}/lingmo-shell-core
 %{_libdir}/libLingmoShellCore.so.%{majver}*
-%{_libdir}/systemd/user/lingmo-shell-core.service
-%{_libdir}/systemd/user/lingmo-shell-core.target
+%{_prefix}/lib/systemd/user/lingmo-shell-core.service
+%{_prefix}/lib/systemd/user/lingmo-shell-core.target
 %changelog
 * Wed Jul 09 2026 Lingmo OS Team <team@lingmo.org> - 1.0.0-1
 - Initial release
