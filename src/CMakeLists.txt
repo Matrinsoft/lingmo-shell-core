@@ -1,16 +1,22 @@
 set(PUBLIC_HEADERS
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/ShellRuntime.h
     ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/SurfaceManager.h
+    ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/PluginManager.h
+    ${CMAKE_SOURCE_DIR}/include/LingmoShellCore/AppletManager.h
 )
 
 set(PRIVATE_HEADERS
     LingmoShellCore/private/ShellRuntime_p.h
     LingmoShellCore/private/SurfaceManager_p.h
+    LingmoShellCore/private/PluginManager_p.h
+    LingmoShellCore/private/AppletManager_p.h
 )
 
 set(SOURCES
     LingmoShellCore/Runtime/ShellRuntime.cpp
     LingmoShellCore/Surface/SurfaceManager.cpp
+    LingmoShellCore/Plugin/PluginManager.cpp
+    LingmoShellCore/Applet/AppletManager.cpp
 )
 
 set(CMAKE_AUTOMOC ON)

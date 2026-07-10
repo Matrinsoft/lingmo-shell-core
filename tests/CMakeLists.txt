@@ -8,3 +8,5 @@ endfunction()
 
 add_lingmo_shell_core_test(tst_ShellRuntime)
 add_lingmo_shell_core_test(tst_SurfaceManager)
+add_lingmo_shell_core_test(tst_PluginManager)
+add_lingmo_shell_core_test(tst_AppletManager)
